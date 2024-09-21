@@ -15,7 +15,7 @@ struct RootView: View {
         
         ZStack {
             NavigationStack {
-                Text("Settings")
+                SettingsView(showSignInView: $showSignInView)
             }
         }
         // MARK: ON Appear
