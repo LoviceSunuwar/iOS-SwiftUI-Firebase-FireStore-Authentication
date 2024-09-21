@@ -30,6 +30,12 @@
 		B292A84A2C9F7DBF00A00B98 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A8492C9F7DBF00A00B98 /* SignInEmailView.swift */; };
 		B292A84B2C9F7DBF00A00B98 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A8492C9F7DBF00A00B98 /* SignInEmailView.swift */; };
 		B292A84C2C9F7DBF00A00B98 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A8492C9F7DBF00A00B98 /* SignInEmailView.swift */; };
+		B292A84E2C9F83CD00A00B98 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A84D2C9F83CD00A00B98 /* AuthenticationManager.swift */; };
+		B292A84F2C9F83CD00A00B98 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A84D2C9F83CD00A00B98 /* AuthenticationManager.swift */; };
+		B292A8502C9F83CD00A00B98 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A84D2C9F83CD00A00B98 /* AuthenticationManager.swift */; };
+		B292A8522C9F8A8900A00B98 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A8512C9F8A8900A00B98 /* RootView.swift */; };
+		B292A8532C9F8A8900A00B98 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A8512C9F8A8900A00B98 /* RootView.swift */; };
+		B292A8542C9F8A8900A00B98 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292A8512C9F8A8900A00B98 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,8 @@
 		B292A8312C9F788400A00B98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B292A8452C9F7CA100A00B98 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		B292A8492C9F7DBF00A00B98 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		B292A84D2C9F83CD00A00B98 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		B292A8512C9F8A8900A00B98 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +166,10 @@
 		B292A8442C9F7C8500A00B98 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				B292A8512C9F8A8900A00B98 /* RootView.swift */,
 				B292A8452C9F7CA100A00B98 /* AuthView.swift */,
 				B292A8492C9F7DBF00A00B98 /* SignInEmailView.swift */,
+				B292A84D2C9F83CD00A00B98 /* AuthenticationManager.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -311,7 +321,9 @@
 			files = (
 				B292A80A2C9F768800A00B98 /* ContentView.swift in Sources */,
 				B292A8082C9F768800A00B98 /* FireCRUDApp.swift in Sources */,
+				B292A8522C9F8A8900A00B98 /* RootView.swift in Sources */,
 				B292A8462C9F7CA100A00B98 /* AuthView.swift in Sources */,
+				B292A84E2C9F83CD00A00B98 /* AuthenticationManager.swift in Sources */,
 				B292A84A2C9F7DBF00A00B98 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,8 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B292A8472C9F7CA100A00B98 /* AuthView.swift in Sources */,
+				B292A84F2C9F83CD00A00B98 /* AuthenticationManager.swift in Sources */,
 				B292A84B2C9F7DBF00A00B98 /* SignInEmailView.swift in Sources */,
 				B292A8192C9F768900A00B98 /* FireCRUDTests.swift in Sources */,
+				B292A8532C9F8A8900A00B98 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +346,9 @@
 			files = (
 				B292A8252C9F768900A00B98 /* FireCRUDUITestsLaunchTests.swift in Sources */,
 				B292A8232C9F768900A00B98 /* FireCRUDUITests.swift in Sources */,
+				B292A8542C9F8A8900A00B98 /* RootView.swift in Sources */,
 				B292A8482C9F7CA100A00B98 /* AuthView.swift in Sources */,
+				B292A8502C9F83CD00A00B98 /* AuthenticationManager.swift in Sources */,
 				B292A84C2C9F7DBF00A00B98 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

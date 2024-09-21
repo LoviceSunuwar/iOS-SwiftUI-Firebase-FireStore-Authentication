@@ -1,3 +1,9 @@
-# GoogleService-Info
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Xcode build folder
+build/
+
+# Ignore GoogleService plist
 
 FireCRUD/GoogleService-Info.plist
