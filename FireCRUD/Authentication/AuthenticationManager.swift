@@ -70,6 +70,13 @@ final class AuthenticationManager {
         print("Verification email sent and email will be updated after the verfication")
     }
     
+    func deleteUser() async throws {
+        guard let user = Auth.auth().currentUser else {
+            throw URLError(.badURL)
+        }
+        try await user.delete()
+    }
+    
     
 
     
