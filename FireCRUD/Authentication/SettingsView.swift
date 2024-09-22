@@ -35,6 +35,12 @@ final class SettingsViewModel: ObservableObject {
         try await AuthenticationManager.shared.updatePassword(password: password)
     }
     
+    func deleteUser() async throws {
+        try await AuthenticationManager.shared.deleteUser()
+    }
+    
+   
+    
 }
 
 struct SettingsView: View {
@@ -55,6 +61,21 @@ struct SettingsView: View {
                 }
                 
             }
+            
+            Button(role: .destructive) {
+                Task {
+                    do {
+                        try await viewModel.deleteUser()
+                        showSignInView = true
+                        
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text ("Delete account")
+            }
+            // MARK: Email View
             
             emailSection
           
